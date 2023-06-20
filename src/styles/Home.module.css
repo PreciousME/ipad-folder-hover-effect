@@ -3,9 +3,12 @@
   width: 120px;
   background-color: #4faef8;
   border-radius: 0px 0px 16px 16px;
-  margin-top: 148px;
   position: relative;
   cursor: pointer;
+}
+
+.unsorted {
+  background-color: #b8b6b9;
 }
 
 .mainFolder * {
@@ -38,6 +41,10 @@
   top: -16px;
   left: 0;
   z-index: -4;
+}
+
+.unsortedRear {
+  background-color: #a09ea0;
 }
 
 .file {
@@ -99,6 +106,8 @@
   margin: auto;
   justify-items: center;
   align-items: center;
+  grid-row-gap: 172px;
+  margin-top: 172px;
 }
 .conatiner {
   width: fit-content;
@@ -110,4 +119,23 @@
   height: calc(100vh - 20px);
   border-radius: 32px;
   border: 2px solid rgba(255, 255, 255, 0.35);
+  position: relative;
+}
+
+.header {
+  display: flex;
+}
+
+.addNew {
+  height: 40px;
+  width: 40px;
+  border-radius: 100px;
+  background-color: rgba(72, 162, 247, 0.12);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  right: 80px;
+  top: 68px;
+  cursor: pointer;
 }
